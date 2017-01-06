@@ -1,3 +1,5 @@
+http://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/
+
 # _The Law of Demeter Is Not A Dot Counting Exercise_
 # Закон Деметры не о том, как считать точки
 
