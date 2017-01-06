@@ -1,12 +1,26 @@
-# The Law of Demeter Is Not A Dot Counting Exercise
- July 14, 2009  21 comments  edit
-Recently I read a discussion on an internal mailing list on whether or not it would be worthwhile to add a null dereferencing operator to C#.
-For example, one proposed idea would allow the following expression.
+# _The Law of Demeter Is Not A Dot Counting Exercise_
+# Закон Деметры не о том, как считать точки
+
+ July 14, 2009
+_Recently I read a discussion on an internal mailing list on whether or not it would be worthwhile to add a null dereferencing operator to C#._
+
+Недавно во внутренней рассылке обсуждалось, нужен ли добавить в C# оператор разыменовывания. 
+
+_For example, one proposed idea would allow the following expression._
+
+Например, предлагалось разрешить такое выражение.
 ```
 object a = foo.?bar.?baz.?qux;
 ```
-This would assign the variable a the value null if any one of foo, bar, or baz is null instead ofthrowing a NullReferenceException. It’s a small, but potentially helpful, mitigation for the billion dollar mistake.
-Sure enough, it did not take long for someone to claim that this syntax would be unnecessary if the code here was not violating the sacred Law of Demeter (or LoD for short). I think this phenomena is an analog to Godwin’s Law and deserves its own name. Let’s call it the “LoD Dot Counting Law”:
+
+_This would assign the variable a the value null if any one of foo, bar, or baz is null instead ofthrowing a NullReferenceException. It’s a small, but potentially helpful, mitigation for the billion dollar mistake._
+
+Если хотя бы одно из свойств foo, bar, или baz окажется null, вместо выброса NullReferenceException переменной будет тоже присвоено значение null. Несложный, но перспективный способ смягчить последствия [ошибки на миллион](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare).
+
+_Sure enough, it did not take long for someone to claim that this syntax would be unnecessary if the code here was not violating the sacred Law of Demeter (or LoD for short). I think this phenomena is an analog to Godwin’s Law and deserves its own name. 
+Let’s call it the “LoD Dot Counting Law”:_
+
+И конечно, тут же нашелся человек, заявивший, что оператор был бы не нужен вовсе, если бы код в примере не нарушал Закон Деметры (Law of Demeter, LoD)
 
 As a discussion of a code expression with more than one dot grows longer, the probability that someone claims a Law of Demeter violation approaches 1.
 
