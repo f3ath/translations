@@ -22,11 +22,15 @@ _This would assign the variable a the value null if any one of foo, bar, or baz 
 _Sure enough, it did not take long for someone to claim that this syntax would be unnecessary if the code here was not violating the sacred Law of Demeter (or LoD for short). I think this phenomena is an analog to Godwin’s Law and deserves its own name. 
 Let’s call it the “LoD Dot Counting Law”:_
 
-И конечно, тут же нашелся человек, заявивший, что оператор был бы не нужен вовсе, если бы код в примере не нарушал Закон Деметры (Law of Demeter, LoD)
+И конечно, тут же нашелся человек, заявивший, что оператор был бы не нужен вовсе, если бы код в примере не нарушал Закон Деметры (Law of Demeter, LoD). Это явление, как мне кажется, очень похоже на [Закон Годвина](https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%93%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D0%B0), а потому достойно собственного названия, например "Закон подсчета точек в LoD":.
 
-As a discussion of a code expression with more than one dot grows longer, the probability that someone claims a Law of Demeter violation approaches 1.
+_As a discussion of a code expression with more than one dot grows longer, the probability that someone claims a Law of Demeter violation approaches 1._
 
-What is wrong with the claim that the above expression violates LoD? To answer that let’s briefly cover the Law of Demeter. I’m not going to cover it in detail but rather point to posts that describe it in much better detail than I would.
+Чем дольше обсуждается кусок кода с более чем одной точкой, тем вероятность того, что в обсуждении всплывет Закон Деметры, ближе к единице.
+
+_What is wrong with the claim that the above expression violates LoD? To answer that let’s briefly cover the Law of Demeter. I’m not going to cover it in detail but rather point to posts that describe it in much better detail than I would._
+
+
 
 The Many Forms of Demeter
 
